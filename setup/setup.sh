@@ -386,9 +386,9 @@ main() {
     setup_servicebus_secret
 
     # 서비스 배포 루프 수정
-    #create_image "acl-usage"
-    #create_image "notification-mock"
-    #create_image "sync"
+    create_image "acl-usage"
+    create_image "notification-mock"
+    create_image "sync"
     create_image "query"
 
     services=("acl-usage" "notification-mock" "sync" "query")
