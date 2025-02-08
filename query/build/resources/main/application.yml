@@ -1,0 +1,22 @@
+server:
+  port: ${SERVER_PORT:8083}
+
+spring:
+  application:
+    name: query-service
+
+  data:
+    mongodb:
+      uri: mongodb://${MONGODB_USER:mongodb}:${MONGODB_PASSWORD:mongodb}@${MONGODB_HOST:localhost}:${MONGODB_PORT:27017}/${MONGODB_DATABASE:usagedb}?authSource=admin
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /api-docs
+
+logging:
+  level:
+    com.kt.usage: DEBUG

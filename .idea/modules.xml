@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/acl-usage/usage.acl-usage.main.iml" filepath="$PROJECT_DIR$/.idea/modules/acl-usage/usage.acl-usage.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/usage.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/usage.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/notification-mock/usage.notification-mock.main.iml" filepath="$PROJECT_DIR$/.idea/modules/notification-mock/usage.notification-mock.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/query/usage.query.main.iml" filepath="$PROJECT_DIR$/.idea/modules/query/usage.query.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sync/usage.sync.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sync/usage.sync.main.iml" />
+    </modules>
+  </component>
+</project>

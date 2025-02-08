@@ -1,0 +1,24 @@
+server:
+  port: ${SERVER_PORT:8081}
+
+spring:
+  application:
+    name: notification-mock-service
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /api-docs
+
+azure:
+  servicebus:
+    connection-string: ${AZURE_SERVICEBUS_CONNECTION_STRING}
+    topic-name: ${AZURE_SERVICEBUS_NOTIFY_TOPIC:notify}
+    subscription-name: ${AZURE_SERVICEBUS_NOTIFY_SUBSCRIPTION:notification-sub}
+
+logging:
+  level:
+    com.kt.usage: DEBUG

@@ -1,0 +1,8 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'io.swagger.core.v3:swagger-annotations:2.2.8'
+    // JAXB API
+    implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
+    // JAXB Runtime
+    implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0'
+}

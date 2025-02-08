@@ -1,0 +1,25 @@
+server:
+  port: ${SERVER_PORT:8082}
+
+spring:
+  application:
+    name: sync-service
+    
+  data:
+    mongodb:
+      uri: mongodb://${MONGODB_USER:mongodb}:${MONGODB_PASSWORD:mongodb}@${MONGODB_HOST:localhost}:${MONGODB_PORT:27017}/${MONGODB_DATABASE:usagedb}?authSource=admin
+
+azure:
+  servicebus:
+    connection-string: ${AZURE_SERVICEBUS_CONNECTION_STRING}
+    topic-name: ${AZURE_SERVICEBUS_USAGE_TOPIC:usage}
+    subscription-name: ${AZURE_SERVICEBUS_USAGE_SUBSCRIPTION:sync-sub}
+
+logging:
+  level:
+    com.kt.usage: DEBUG
+    
+
+
+
+
