@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SHARED_PREFIX="dg0100"  # 실습 시 'tiu-dgga'로 변경 필요
+RESOURCE_GROUP="ictcoe-edu" #az group list -o table
 
 # ===========================================
 # Usage Pattern 실습환경 정리 스크립트
@@ -45,7 +45,6 @@ setup_environment() {
     USERID=$1
     NAME="${USERID}-usage"
     NAMESPACE="${NAME}-ns"
-    RESOURCE_GROUP="${SHARED_PREFIX}-rg"
 
     # Service Bus 설정
     SB_NAMESPACE="sb-${NAME}"
